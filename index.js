@@ -2,7 +2,7 @@ const { Client, Location, List, Buttons, LocalAuth } = require('whatsapp-web.js'
 
 const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: { headless: false }
+    puppeteer: { headless: true }
 });
 
 client.initialize();
